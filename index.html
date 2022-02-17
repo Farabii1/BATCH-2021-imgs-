@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BATCH 2021</title>
+        <link rel="icon" href="iconT.png">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Foyaz Ahamad Farabi">
+        <meta http-equiv="refresh" content="200">
+        <meta name="description" content="Free Web tutorials for HTML and CSS">
+
+        <style>
+            :root{
+                --purple: #8e44ad;
+            }
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html{
+                font-size: 62.5%;
+                display: grid;
+                height: 100%;
+                width: 100%;
+                background-color: #111827;
+            }
+
+            h1{
+                font-size: 3rem;
+                margin: 2rem 0;
+                text-transform: capitalize;
+                color: rgb(220, 222, 230);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                letter-spacing: .2rem;
+                text-align: center;
+                text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
+            }
+
+            input{
+                display: none;
+            }
+
+            .button{
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .tag{
+                font-size: 1.4rem;
+                margin: 1.5rem 0rem;
+                padding: .5rem 1.8rem;
+                border-radius: 5rem;
+                background-color: #130c0c;
+                display: inline-block;
+                color: rgb(243, 234, 234);
+                cursor: pointer;
+                border: .2rem solid rgb(199, 168, 168);
+            }
+
+            .images{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .images img{
+                width: 15rem;
+                height: 20rem;
+                transition: all .5s ease-in-out;
+                align-items: flex-start;
+            }
+
+            .images .students{
+                height: 15rem;
+                width: 20rem;
+                margin: 2rem;
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+                overflow: hidden;
+                border-radius: .5rem;
+            }
+            .images .complexes{
+                height: 15rem;
+                width: 20rem;
+                margin: 2rem;
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+                overflow: hidden;
+                border-radius: .5rem;
+            }
+            .images .classroom{
+                height: 15rem;
+                width: 20rem;
+                margin: 2rem;
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+                overflow: hidden;
+                border-radius: .5rem;
+            }
+            .images .farewell{
+                height: 15rem;
+                width: 20rem;
+                margin: 2rem;
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+                overflow: hidden;
+                border-radius: .5rem;
+            }
+            .images .book{
+                height: 15rem;
+                width: 20rem;
+                margin: 2rem;
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+                overflow: hidden;
+                border-radius: .5rem;
+            }
+     
+
+            /*filter css */
+            #students:checked ~ .images > img:not([class *="students"]),
+            #complexes:checked ~ .images > img:not([class *="complexes"]),
+            #classroom:checked ~ .images > img:not([class *="classroom"]),
+            #farewell:checked ~ .images > img:not([class *="farewell"]),
+            #book:checked ~ .images > img:not([class *="book"]){
+                width: .0rem;
+                height: .0rem;
+            }
+            
+            #all:checked ~ .all,
+            #students:checked ~ .students,
+            #complexes:checked ~ .complexes,
+            #classroom:checked ~ .classroom,
+            #farewell:checked ~ .farewell,
+            #book:checked ~ .book{
+                background-color: #333333;
+                color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <h1>Enjoy our memories</h1>
+        
+        <input type="radio" id="all" name="raidoBtn" checked>
+        <input type="radio" id="students" name="raidoBtn">
+        <input type="radio" id="complexes" name="raidoBtn">
+        <input type="radio" id="classroom" name="raidoBtn">
+        <input type="radio" id="farewell" name="raidoBtn">
+        <input type="radio" id="book" name="raidoBtn">
+
+        <div class="button">
+        <label for="all" class="tag all">all</label>
+        <label for="students" class="tag students">students</label>
+        <label for="complexes" class="tag complexes">complexes</label>
+        <label for="classroom" class="tag classroom">classroom</label>
+        <label for="farewell" class="tag farewell">farewell function</label>
+        <label for="book" class="tag book">library</label>
+        </div>
+
+        <br>
+
+        <div class="images">
+            <img src="imgs/wallp.jpg" class="students">
+            <img src="imgs/14.jpg" class="complexes">
+            <img src="imgs/15.jpg" class="complexes">
+            <img src="imgs/a.jpg" class="complexes">
+            <img src="imgs/b.jpg" class="complexes">
+            <img src="imgs/c.jpg" class="complexes">
+            <img src="imgs/d.jpg" class="complexes">
+            <img src="imgs/38.jpg" class="complexes">
+            <img src="imgs/37.jpg" class="complexes">
+            <img src="imgs/53.jpg" class="complexes">
+            <img src="imgs/m.jpg" class="complexes">
+            <img src="imgs/IV.jpg" class="complexes">
+            <img src="imgs/21.jpg" class="book">
+            <img src="imgs/16.jpg" class="book">
+            <img src="imgs/17.jpg" class="book">
+            <img src="imgs/18.jpg" class="book">
+            <img src="imgs/19.jpg" class="book">
+            <img src="imgs/20.jpg" class="book">
+            <img src="imgs/22.jpg" class="book">
+            <img src="imgs/23.jpg" class="book">
+            <img src="imgs/34.jpg" class="book">
+            <img src="imgs/26.jpg" class="students">
+            <img src="imgs/f.jpg" class="farewell">
+            <img src="imgs/49.jpg" class="farewell">
+            <img src="imgs/41.jpg" class="farewell">
+            <img src="imgs/42.jpg" class="farewell">
+            <img src="imgs/43.jpg" class="farewell">
+            <img src="imgs/44.jpg" class="farewell">
+            <img src="imgs/36.jpg" class="farewell">
+            <img src="imgs/46.jpg" class="farewell">
+            <img src="imgs/t.jpg" class="farewell">
+            <img src="imgs/w.jpg" class="farewell">
+            <img src="imgs/g.jpg" class="students">
+            <img src="imgs/h.jpg" class="students">
+            <img src="imgs/j.jpg" class="students">
+            <img src="imgs/k.jpg" class="students">
+            <img src="imgs/n.jpg" class="students">
+            <img src="imgs/o.jpg" class="students">
+            <img src="imgs/q.jpg" class="students">
+            <img src="imgs/r.jpg" class="students">
+            <img src="imgs/s.jpg" class="students">
+            <img src="imgs/u.jpg" class="students">
+            <img src="imgs/x.jpg" class="farewell">
+            <img src="imgs/y.jpg" class="farewell">
+            <img src="imgs/z.jpg" class="farewell">
+            <img src="imgs/2.jpg" class="farewell">
+            <img src="imgs/3.jpg" class="classroom">
+            <img src="imgs/4.jpg" class="classroom">
+            <img src="imgs/52.jpg" class="classroom">
+            <img src="imgs/9.jpg" class="farewell">
+            <img src="imgs/10.jpg" class="farewell">
+            <img src="imgs/11.jpg" class="farewell">
+            <img src="imgs/50.jpg" class="students">
+            <img src="imgs/12.jpg" class="students">
+            <img src="imgs/24.jpg" class="students">
+            <img src="imgs/25.jpg" class="students">
+            <img src="imgs/27.jpg" class="students">
+            <img src="imgs/28.jpeg" class="students">
+            <img src="imgs/30.jpg" class="classroom">
+            <img src="imgs/31.jpg" class="classroom">
+            <img src="imgs/32.jpg" class="classroom">
+            <img src="imgs/33.jpg" class="students">
+            <img src="imgs/51.jpg" class="students">
+            <img src="imgs/rI.jpg" class="students">
+            <img src="imgs/II.jpg" class="students">
+            <img src="imgs/III.jpg" class="students">>
+            <img src="imgs/rV.jpg" class="students">
+            <img src="imgs/VI.jpg" class="students">
+            <img src="imgs/VII.jpg" class="students">
+            <img src="imgs/VIII.jpg" class="students">
+            <img src="imgs/IX.jpg" class="students">
+            <img src="imgs/rX.jpg" class="students">
+            <img src="imgs/XI.jpg" class="students">
+            <img src="imgs/XII.jpg" class="students">
+            <img src="imgs/XIII.jpg" class="students">
+            <img src="imgs/XIV.jpg" class="students">
+            <img src="imgs/XV.jpg" class="students">
+            <img src="imgs/XVI.jpg" class="students">
+            <img src="imgs/XVII.jpg" class="students">
+            <img src="imgs/XVIII.jpg" class="students">
+            <img src="imgs/XIX.jpg" class="classroom">
+            <img src="imgs/XX.jpg" class="classroom">
+            <img src="imgs/XXI.jpg" class="classroom">
+            <img src="imgs/XXII.jpg" class="classroom">
+        </div>
+
+    </body>
+</html>
